@@ -1,3 +1,7 @@
+#..........This Bot Made By [RAHAT](https://t.me/r4h4t_69)..........#
+#..........Anyone Can Modify This As He Likes..........#
+#..........Just one requests do not remove my credit..........#
+
 import requests, random, time, asyncio
 from uuid import uuid1
 import uuid
@@ -14,13 +18,13 @@ import tempfile
 import re 
 from country_code import country_translations
 # Bot configuration
-API_ID = 24720817
-API_HASH = "43669876f7dbd754e157c69c89ebf3eb"
-BOT_TOKEN = "7816641259:AAF7ItXGKdXzkXTqUhIPvjyT6xhAGPR9iYc"
+API_ID = "" # Add Your Telegram API_ID Here
+API_HASH = "" # Add Your Telegram API_HASH| Here
+BOT_TOKEN = "" # Add Your BOT Token Here
 
 # Database configuration
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://094:094@cluster0.mixuhkk.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DB_NAME", "Cluster0")
+DB_URL = os.environ.get("DB_URL", "") # Add Your MongoDB Database URL Here
+DB_NAME = os.environ.get("DB_NAME", "") # Add Your MongoDB Database Name Here
 client = MongoClient(DB_URL)
 db = client[DB_NAME]
 
@@ -31,7 +35,7 @@ user_cancel_flags = {}
 app = Client("crunchyroll_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 # Admin ID
-ADMIN_ID = 1235222889
+ADMIN_ID = "" # Add Your Telegram User ID Here
 
 def parse_proxy(proxy):
     """Parse proxy to handle both ip:port and ip:port:username:password formats."""
