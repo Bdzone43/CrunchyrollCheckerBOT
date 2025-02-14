@@ -18,13 +18,13 @@ import tempfile
 import re 
 from country_code import country_translations
 # Bot configuration
-API_ID = "" # Add Your Telegram API_ID Here
-API_HASH = "" # Add Your Telegram API_HASH| Here
-BOT_TOKEN = "" # Add Your BOT Token Here
+API_ID = "13534310" # Add Your Telegram API_ID Here
+API_HASH = "51dbabc4e1c58cfc726158812d4ec8c5" # Add Your Telegram API_HASH| Here
+BOT_TOKEN = "7860608145:AAHJHJ7SdKHRf_BXzpeO1rDexJf8Ng-C4OQ" # Add Your BOT Token Here
 
 # Database configuration
-DB_URL = os.environ.get("DB_URL", "") # Add Your MongoDB Database URL Here
-DB_NAME = os.environ.get("DB_NAME", "") # Add Your MongoDB Database Name Here
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://lyxpnnfp8f:GSvW26Xg4iApjbjO@cluster0.kibiq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # Add Your MongoDB Database URL Here
+DB_NAME = os.environ.get("DB_NAME", "Cluster0") # Add Your MongoDB Database Name Here
 client = MongoClient(DB_URL)
 db = client[DB_NAME]
 
