@@ -387,11 +387,7 @@ async def check_accounts(client, message: Message):
         "timestamp": datetime.utcnow()
     })
     
-    
-    
-    
-
-    summary = f"""
+     summary = f"""
 Finished checking!
 Premium Accounts: {len(premium_accounts)}
 Free Accounts: {len(free_accounts)}
